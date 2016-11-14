@@ -11,7 +11,7 @@ public class Controller implements ActionListener{
 	//Instantiate a View object
 			View view; 
 			//Instantiate a Model Object
-			Model model = new Model();
+			Model model;
 	/**
 	 * Controller Constructor  
 	 */

@@ -1,4 +1,5 @@
 import java.awt.BorderLayout;
+import java.awt.FlowLayout;
 import java.awt.GridLayout;
 import java.util.Observable;
 import java.util.Observer;
@@ -39,14 +40,14 @@ public class View extends JFrame implements Observer{
 		this.action=action;
 		f = new JFrame("Calculator");
 		f.setDefaultCloseOperation(EXIT_ON_CLOSE);
-		f.setSize(400, 400);
+		f.setSize(150, 280);
 		f.setLayout(new BorderLayout());
 		
 		
 		
 		panel = new JPanel(); 
-		panel.setLayout(new GridLayout(4,2));
-		
+		//panel.setLayout(new GridLayout(4,2));
+		panel.setLayout(new FlowLayout(6));
 		//for the text area
 		firstNum = new JTextField(10);
 		firstNum.setActionCommand("firstNum");
