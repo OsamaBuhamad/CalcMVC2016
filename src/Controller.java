@@ -18,8 +18,8 @@ public class Controller implements ActionListener{
 	public Controller()
 	{
 		
-		view=new View(this);
-		model = new Model();
+		 view=new View(this);
+		 model = new Model();
 		//Register View object as an observer to model Object
 		model.addObserver(view);
 	}

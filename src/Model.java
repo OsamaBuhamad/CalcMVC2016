@@ -65,10 +65,10 @@ public class Model extends Observable{
 	
 
 	public void division(){
-		if(secondNum!=0)
+		if(secondNum!=0){
 		result =firstNum/secondNum;
 		setCommandAndNotify(result);
-		
+		}
 	}
 	/**
 	 * This method notifies observers with a change or an update
