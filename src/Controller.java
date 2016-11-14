@@ -15,13 +15,13 @@ public class Controller implements ActionListener{
 	/**
 	 * Controller Constructor  
 	 */
-	public Controller()
+	public Controller(Model model)
 	{
-		
-		 view=new View(this);
-		 model = new Model();
-		//Register View object as an observer to model Object
-		model.addObserver(view);
+		this.model=model;
+	}
+	
+	public void setView(View view){
+		this.view=view;
 	}
 	
 	/**

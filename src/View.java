@@ -154,6 +154,9 @@ public class View extends JFrame implements Observer{
 		
 	}
 	
+	public void addView(Observable o){
+		o.addObserver(this);
+	}
 
 
 	@Override

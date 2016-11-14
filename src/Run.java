@@ -9,7 +9,12 @@ public class Run {
 	
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		Controller control= new Controller();
+		Model model = new Model();
+		Controller controller= new Controller(model);
+		View view = new View(controller);
+		view.addView(model);
+		controller.setView(view);
+		//model.addObserver(view);
 	}
 
 }
