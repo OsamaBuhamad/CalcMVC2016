@@ -6,8 +6,16 @@ import org.junit.Test;
 
 public class ModelTest2 {
 
+	private Model model;
+	int first,second;
 	@Before
 	public void setUp() throws Exception {
+		model = new Model();
+		first=10;
+		second=5;
+		model.setFirstNum(first);
+		model.setSecondNum(second);
+		
 	}
 
 	@After
@@ -16,47 +24,55 @@ public class ModelTest2 {
 
 	@Test
 	public void testModel() {
-		fail("Not yet implemented");
+		assertNotNull(model);
 	}
 
 	@Test
 	public void testGetFirstNum() {
-		fail("Not yet implemented");
+		
+		assertEquals(10,model.getFirstNum());
 	}
 
 	@Test
 	public void testSetFirstNum() {
-		fail("Not yet implemented");
+		model.setFirstNum(first);
+		assertEquals(10,model.getFirstNum());
 	}
 
 	@Test
 	public void testGetSecondNum() {
-		fail("Not yet implemented");
+		assertEquals(5,model.getSecondNum());
 	}
 
 	@Test
 	public void testSetSecondNum() {
-		fail("Not yet implemented");
+		model.setSecondNum(11);
+		assertEquals(11,model.getSecondNum());
 	}
 
 	@Test
 	public void testAddition() {
-		fail("Not yet implemented");
+		
+		model.addition();
+		assertEquals(15,model.getResult());
 	}
 
 	@Test
 	public void testSubtraction() {
-		fail("Not yet implemented");
+		model.subtraction();
+		assertEquals(5,model.getResult());
 	}
 
 	@Test
 	public void testMultipication() {
-		fail("Not yet implemented");
+		model.multipication();
+		assertEquals(50,model.getResult());
 	}
 
 	@Test
 	public void testDivision() {
-		fail("Not yet implemented");
+		model.division();
+		assertEquals(2,model.getResult());
 	}
 
 }

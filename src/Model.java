@@ -40,10 +40,12 @@ public class Model extends Observable{
 		
 	}
 
-
+	public int getResult(){
+		return result;
+	}
 
 	public void addition(){
-		result =firstNum+secondNum;
+		this.result =firstNum+secondNum;
 		setCommandAndNotify(result);
 		
 	}
