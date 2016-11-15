@@ -50,13 +50,13 @@ public class View extends JFrame implements Observer{
 		panel.setLayout(new FlowLayout(6));
 		//for the text area
 		firstNum = new JTextField(10);
-		firstNum.setActionCommand("firstNum");
-		firstNum.addActionListener(this.action);
+		//firstNum.setActionCommand("firstNum");
+		//firstNum.addActionListener(this.action);
 		firstNumLabel = new JLabel("First Number: ");
 		
 		secondNum = new JTextField(10);
-		secondNum.setActionCommand("secondName");
-		secondNum.addActionListener(this.action);
+		//secondNum.setActionCommand("secondName");
+		//secondNum.addActionListener(this.action);
 		secondNumLabel = new JLabel("Second Number: ");
 		
 		//buttons 
@@ -164,7 +164,6 @@ public class View extends JFrame implements Observer{
 		//Print the name from the Model
 
 		int resultt = ((int) arg1);
-		
 		result.setText(""+resultt);
 
 	}

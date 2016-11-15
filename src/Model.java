@@ -10,8 +10,7 @@ public class Model extends Observable{
 	private int firstNum, secondNum,result;
 	public Model()
 	{
-		//Call super to 
-		super();
+	
 		
 	}
 	
